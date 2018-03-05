@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>POKéMON Master Quiz</title>
+	<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<!-- HTML for start page -->
+	<header role="banner">
+		<div class="titleBox col-12">
+			
+			<h1 class="quizTitle">
+				<img class="pokeball" src="https://vignette.wikia.nocookie.net/fantendo/images/b/b1/Pok%C3%A9ball.png/revision/latest?cb=20131201150745" alt="pokeball"> Ultimate POKéMON Master Test <img class="pokeball" src="https://vignette.wikia.nocookie.net/fantendo/images/b/b1/Pok%C3%A9ball.png/revision/latest?cb=20131201150745" alt="pokeball">
+				<div class="scoreCount"></div>
+			</h1>
+		</div>
+		<div class="questionCount col-6">Questions: <span class="currentQuestion">0</span> out of 10</div>
+		<div class="scoreCount col-6">Score: <span class="currentScore">0</span>% out of 100%</div>
+	</header>
+
+	<main role="main">
+		<div class="intro col-12">
+			<h2 class="instruct">Click the <span class="pika">Pikachu</span> to take this Ultimate POKéMON Master Test and prove if you are a real POKéMON Master!</h2>
+		</div>
+		<div class="startButton col-12">
+			<input type="image" class="pikaButton" src="http://www.pngmart.com/files/2/Pikachu-PNG-Picture.png" alt="pikachu button">
+		</div>
+
+		<!-- empty div to hold the form -->
+		<div class="quizFormContain col-12"></div>
+		
+	</main>
+
+	<script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="answerKey.js"></script>
+</body>
+</html>

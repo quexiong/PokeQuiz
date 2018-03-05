@@ -1,0 +1,253 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: url() no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Acme', sans-serif;
+  background-color: #E8BF3A;
+  color: #F8F8FF;
+}
+
+/*************For Start Page**************/
+.pokeball{
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
+.pika{
+  text-decoration: underline;
+}
+
+.titleBox{
+  margin: 0px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.titleBox, .questionCount, .scoreCount{
+  text-align: center;
+  border: 4px solid #0A0908;
+  background-color: #0A0908;
+  color: #F8F8FF;
+  font-size: 26px;
+}
+
+.instruct{
+  text-align: center;
+  font-size: 28px;
+}
+
+.pikaButton{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 28%;
+  height: 28%;
+}
+/****************************************/
+
+/*************For Questions Page**************/
+#fieldset{
+  border: 3px solid #0A0908;
+  border-radius: 10px;
+}
+
+#legend{
+  text-align: center;
+  font-size: 24px;
+}
+
+.quizFormContain{
+  display: none;
+}
+
+label{
+  display: block;
+}
+
+fieldset{
+  border: none;
+}
+
+.questionCount, .scoreCount{
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+}
+
+.answerBox{
+  display: inline-table;
+  width: 400px;
+  height: 250px;
+  /*Center the radio buttons OR comment out text-align to have radio buttons align to left*/
+  text-align: center; 
+}
+
+.submitAnswerButtonContain, .nextQuestionContain, .restartQuizButtonContain{
+  text-align: center;
+}
+
+.submitAnswerButton:hover{
+  background-color: #272932; 
+} 
+
+.nextQuestion:hover{
+  background-color: #272932; 
+}
+
+.submitAnswerButton, .nextQuestion, .restartQuizButton{
+  /*margin: auto;*/
+  width: 50%;
+  height: 36px;
+  border: 2px solid #020202;
+  background-color: #020202;
+  color: #F8F8FF;
+  font-family: 'Acme', sans-serif;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.quizQuestion, .pokeDisplayTitle{
+  font-size: 24px;
+}
+
+.answerOption{
+  padding: 8px;
+  font-size: 20px;
+  border: 1px solid #0A0908;
+  margin-bottom: 10px;
+  background-color: #020202;
+  border-radius: 10px;
+}
+
+.answerOption:hover{
+  background-color: #272932; 
+}
+
+.pokePNG{
+  /*Don't do position: absolute and the imgs will be centered in the div, otherwise uncomment and the imgs will appear to the left*/
+  /*position: absolute;*/
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+  /*height: 220px;*/
+  border-radius: 10px;
+  border:3px solid #0A0908;
+}
+
+.pokeImgChoice{
+  display: flex;
+  margin: auto;
+  width: 180px;
+  height: 180px;
+}
+/*********************************************/
+
+/*************For Question Feedback Pages**************/
+.questionFeedback_Wrong, .questionFeedback_Correct{
+  text-align: center;
+  height: 80%;
+}
+
+#correct, #wrong{
+  text-align: center;
+  font-size: 24px;
+}
+
+.feedbackImg{
+  width: 45%;
+  height: 45%;
+  border-radius: 10px;
+}
+
+.feedbackImgContain{
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+}
+
+.finalResults{
+  text-align: center;
+}
+
+/*********************************************/
+
+.row {
+  max-width: 1000px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+/* Clearfix */
+.row::before,
+.row::after {
+  display: table;
+  content: '';
+}
+
+.row::after {
+  clear: both;
+}
+
+.col-3, .col-4, .col-6, .col-8, .col-12 {
+  float: left;
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
+}
+
+/* Mobile defaults */
+.col-3, .col-4, .col-6, .col-8, .col-12 {
+  width: 100%;
+}
+
+/******************** 
+  From 640px onwards
+*********************/
+@media only screen and (min-width: 640px) {
+  .questionAnswerForm {
+        width: 100%;
+        padding: 20px;
+        margin-top: 0;
+    }
+    
+    header {
+      text-align: center;
+    }
+  
+  /* 3 columns, 3/12 in % */
+  .col-3 {
+    width: 25%;
+  }
+
+  /* 4 columns */
+  .col-4 {
+    width: 33.33%;
+  }
+
+  /* 6 columns */
+  .col-6 {
+    width: 50%;
+  }
+  /* 8 columns */
+  .col-8 {
+    width: 66.67%;      
+  }
+
+  /* 12 columns */
+  .col-12 {
+    width: 100%;
+  }
+}
