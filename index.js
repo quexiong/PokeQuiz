@@ -104,7 +104,7 @@ function checkUserAnswer() {
 			$('.quizFormContain').html(`
 				<div class="questionFeedback_Correct col-12">
 					<div class="feedbackImgContain">
-						<img class="feedbackImg" src="https://cdn.vox-cdn.com/thumbor/GevroG0K-ohtv0j5xJA4u3EO1y4=/79x0:943x576/1200x800/filters:focal(79x0:943x576)/cdn.vox-cdn.com/uploads/chorus_image/image/48741387/But_2Bbut_2Bpokemon_2Bare_2Bour_2Bfriends_2B_db0d38a978c44a347da7804495ba8e71.0.0.jpg" alt="A group of joyous POKéMON">
+						<img class="feedbackImg" src="poke-joy.jpg" alt="A group of joyous POKéMON">
 					</div>
 					<h2 id="correct">CORRECT!</h2>
 					<div class="nextQuestionContain"><button type="button" class="nextQuestion">Next</button></div>
@@ -117,7 +117,7 @@ function checkUserAnswer() {
 			$('.quizFormContain').html(`
 				<div class="questionFeedback_Wrong col-12">
 					<div class="feedbackImgContain">
-						<img class="feedbackImg" src="http://otaku-w9pxf76zfsktmx3e.stackpathdns.com/wp-content/uploads/2016/10/pokemon-go-crash-fix-guide-2016.jpg" alt="A defeated Pikachu smashed into the dirt">
+						<img class="feedbackImg" src="defeated-pikachu.png" alt="A defeated Pikachu smashed into the dirt">
 					</div>
 					<h2 id="wrong">WRONG!</h2>
 					<h2 id="wrong">The correct answer is: ${answerKey[questionCount].answer}</h2>
